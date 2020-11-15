@@ -4,7 +4,8 @@
 
 #include <netinet/in.h>
 //https://www.tenouk.com/Module40c.html
-int main(){
+int main()
+{
     int a;
     a = socket(AF_INET, SOCK_STREAM, 0);
     struct sockaddr_in mghaddress;
@@ -18,6 +19,6 @@ int main(){
     conn = accept(a, 0, 0);
     char d[256] = "these data are from server";
     send(conn, d, sizeof(d), 0);
-    close(a);//close socket
+    close(a); //close socket
     return 0;
 }
