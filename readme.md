@@ -1,8 +1,8 @@
 #This project made to help other with a mini example of C socket Server / Client
 
 The binaries compiled on MacOS with gcc(clang)
-gcc serversocket.c -o serversocket
-gcc clientsocket.c -o clientsocket
+gcc src/serversocket.c -o bin/serversocket
+gcc src/clientsocket.c -o bin/clientsocket
 
 No dependancies, just C.
 
